@@ -1,13 +1,5 @@
 import styled from 'styled-components'
 
-export const Background = styled.div`
-  background-color: #3A394D
-  height: 100vh
-  display: flex
-  flex: 1
-  justify-content: center
-  align-items: center
-`
 export const Main = styled.div`
   display: flex
   margin: auto
@@ -29,15 +21,16 @@ export const TextArea = styled.textarea`
   padding: 10px
 `
 
-export const Header = styled.div`
+export const Header = styled.header`
   background-color: #34394d
   color: white
   position: absolute
   top: 0
   width: 100%
-  padding:25px
+  padding:25px 0
   text-align: center
 `
+
 export const Games = styled.div`
   margin: auto
   margin-top: 150px
@@ -56,6 +49,7 @@ export const Button = styled.button`
   text-align: center
   padding: 10px
   margin-top: 20px
+  cursor: pointer
 `
 export const Button2 = styled.button`
   margin:auto
@@ -69,6 +63,7 @@ export const Button2 = styled.button`
   width: 20%
   padding: 10px
   margin-top: 20px
+  cursor: pointer
 `
 export const List = styled.div`
   display: flex
