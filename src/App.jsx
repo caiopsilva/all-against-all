@@ -1,5 +1,11 @@
 import React, { Component, Fragment } from 'react'
-import { Header, Main, TextArea, Left, Right, Button, Button2, Games, List, Item1, Item2, Item3, Row } from './lib/index'
+import {
+  Header, Main,
+  TextArea, Left, Right,
+  Button, Button2,
+  Games, List,
+  Item1, Item2, Item3, Row } from './lib/index'
+import Helmet from 'react-helmet'
 
 class App extends Component {
   constructor (props) {
@@ -44,6 +50,7 @@ class App extends Component {
     const { show, games } = this.state
     return (
       <Fragment>
+        <Helmet title='Taça Jatoba' />
         <Header>
           <h1>Gerador de tabelas todos contra todos</h1>
         </Header>
