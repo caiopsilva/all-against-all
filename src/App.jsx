@@ -6,6 +6,7 @@ import {
   Games, List,
   Item1, Item2, Item3, Row } from './lib/index'
 import Helmet from 'react-helmet'
+import ReactToPrint from 'react-to-print'
 
 class App extends Component {
   constructor (props) {
@@ -58,8 +59,12 @@ class App extends Component {
           show ? (
             <Games>
               <Button2 onClick={this.onBack.bind(this)}> Voltar </Button2>
-              <Button2> Imprimir </Button2>
-              <List>
+              <ReactToPrint
+                trigger={() => <Button2>Imprimir</Button2>}
+                content={() => this.componentRef}
+                pageStyle=''
+              />
+              <List ref={el => (this.componentRef = el)}>
                 {
                   games.map((item) => {
                     const game = item.split(' ')

@@ -53,7 +53,6 @@ export const Button = styled.button`
 `
 export const Button2 = styled.button`
   margin:auto
-  margin-left: 10px
   margin-right: 10px
   color: white
   background-color: #3A394D
@@ -68,7 +67,7 @@ export const Button2 = styled.button`
 export const List = styled.div`
   display: flex
   flex-direction: column
-  margin-top : 40px
+  margin-top: 40px
 `
 
 export const Row = styled.div`
@@ -77,14 +76,17 @@ export const Row = styled.div`
 `
 
 export const Item1 = styled.label`
+  text-align:left
   font-size: 30px
   flex:1
 `
 export const Item2 = styled.label`
+  text-align:center
   font-size: 30px
   flex:1
 `
 export const Item3 = styled.label`
+  text-align:right
   font-size: 30px
   flex:1
 `
